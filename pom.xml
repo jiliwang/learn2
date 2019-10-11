@@ -11,6 +11,8 @@
     <modules>
         <module>eurekaserver</module>
         <module>admin</module>
+        <module>kitty-common</module>
+        <module>kitty-boot</module>
     </modules>
 
     <!--  加入 spring cloud 组件 -->
