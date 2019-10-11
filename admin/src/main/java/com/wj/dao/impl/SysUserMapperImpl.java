@@ -21,6 +21,6 @@ public class SysUserMapperImpl implements SysUserMapper {
 
     @Override
     public List<SysUser> selectAll() {
-        return sqlSessionTemplate.selectList("findAll");
+        return sqlSessionTemplate.selectList("selectAll");
     }
 }
