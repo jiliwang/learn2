@@ -31,4 +31,10 @@ public interface SysMenuMapper {
 	List<SysMenu> findByUserName(@Param(value = "userName") String userName);
 
 	List<SysMenu> findRoleMenus(@Param(value = "roleId") Long roleId);
+
+    /**
+     * 分页查询
+     * @return
+     */
+    List<SysMenu> selectPage();
 }
