@@ -1,5 +1,6 @@
 package com.wj.datasource;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -39,6 +40,9 @@ public class DbDataSource {
     public DataSource dbDataSource() {
         return DataSourceBuilder.create().build();
     }
+//    public DataSource druidDataSource(){
+//        return new DruidDataSource();
+//    }
 
     @Bean(name = "dbSqlSessionFactory")
     public SqlSessionFactory dbSqlSessionFactory(@Qualifier("dbData") DataSource dataSource) throws Exception {

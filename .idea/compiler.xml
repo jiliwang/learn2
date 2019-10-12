@@ -9,11 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
         <module name="kitty-common" />
-        <module name="kitty-boot" />
         <module name="admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="kitty-boot" target="1.8" />
       <module name="kittyboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
