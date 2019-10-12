@@ -16,10 +16,10 @@ public class SysUserServiceImpl implements SysUserService {
     @Resource(name = "sysUserMapperImpl")
     private SysUserMapper sysUserMapper;
 
-//    @Override
-//    public SysUser findByUserId(Long userId) {
-//        return sysUserMapper.selectByPrimaryKey(userId);
-//    }
+    @Override
+    public SysUser findByUserId(Long userId) {
+        return sysUserMapper.selectByPrimaryKey(userId);
+    }
 
     @Override
     public List<SysUser> findAll() {

@@ -14,10 +14,12 @@ import java.util.List;
 public class SysUserMapperImpl implements SysUserMapper {
     @Resource(name = "dbSqlSessionTemplate")
     private SqlSessionTemplate sqlSessionTemplate;
-//    @Override
-//    public SysUser findByUserId(Long userId) {
-//        return null;
-//    }
+
+
+    @Override
+    public SysUser selectByPrimaryKey(Long id) {
+        return sqlSessionTemplate.selectOne("selectByPrimaryKey",id);
+    }
 
     @Override
     public List<SysUser> selectAll() {

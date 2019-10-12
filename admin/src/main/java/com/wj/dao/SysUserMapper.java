@@ -16,7 +16,7 @@ public interface SysUserMapper {
 //
 //    int insertSelective(SysUser record);
 //
-//    SysUser selectByPrimaryKey(Long id);
+    SysUser selectByPrimaryKey(Long id);
 //
 //    int updateByPrimaryKeySelective(SysUser record);
 //
