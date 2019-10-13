@@ -2,6 +2,7 @@ package com.wj.dao.impl;
 
 
 import com.wj.dao.SysUserMapper;
+import com.wj.entity.SysMenu;
 import com.wj.entity.SysUser;
 import com.wj.service.SysUserService;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -18,11 +19,16 @@ public class SysUserMapperImpl implements SysUserMapper {
 
     @Override
     public SysUser selectByPrimaryKey(Long id) {
-        return sqlSessionTemplate.selectOne("selectByPrimaryKey",id);
+        return sqlSessionTemplate.selectOne("com.wj.dao.SysUserMapper.selectByPrimaryKey",id);
     }
 
     @Override
     public List<SysUser> selectAll() {
         return sqlSessionTemplate.selectList("selectAll");
+    }
+
+    @Override
+    public List<SysUser> selectPage() {
+        return sqlSessionTemplate.selectList("selectPage");
     }
 }

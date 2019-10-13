@@ -5,7 +5,7 @@ import com.wj.entity.SysUser;
 
 import java.util.List;
 
-public interface SysUserService {
+public interface SysUserService extends CurdService<SysUser>{
     /**
      * 根据用户ID查找用户
      * @param userId

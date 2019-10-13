@@ -2,6 +2,7 @@ package com.wj.dao;
 
 
 
+import com.wj.entity.SysMenu;
 import com.wj.entity.SysUser;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -35,4 +36,10 @@ public interface SysUserMapper {
      * @return
      */
     List<SysUser> selectAll();
+
+    /**
+     * 分页查询
+     * @return
+     */
+    List<SysUser> selectPage();
 }
